@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* styles.css */
+
+        /* Reset some default styles */
+        body, h1, h2, p, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-image: url(download.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background: #35424a;
+            color: lightgreen;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: wheat;
+            text-decoration: none;
+        }
+
+        /* Main section styles */
+        main {
+            padding: 20px;
+        }
+
+        /* Section styles */
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: cover;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a;
+            color: #6b5f5f;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        /* From Uiverse.io by cbolson */ 
+.my-form {
+  --_clr-primary: #26ce3d;
+  --_clr-hover: #f33195;
+  --_clr-checked: #127acf;
+}
+.my-form > div {
+  --_clr-current: var(--_clr-primary);
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.my-form > div + div {
+  margin-block-start: 0.5rem;
+}
+.my-form label {
+  cursor: pointer;
+  color: var(--_clr-current);
+  transition: color 150ms ease-in-out;
+}
+
+/* styled checkbox */
+.my-form input[type="checkbox"] {
+  appearance: none;
+  outline: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  aspect-ratio: 1;
+  padding: 0.25rem;
+  background: transparent;
+  border: 1px solid var(--_clr-current);
+  border-radius: 2px;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+.my-form input[type="checkbox"]::after {
+  content: "\2714";
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+  color: var(--_clr-checked);
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.my-form label:hover,
+.my-form input[type="checkbox"]:focus-visible,
+.my-form input[type="checkbox"]:focus-visible + label,
+.my-form input[type="checkbox"]:hover,
+.my-form input[type="checkbox"]:hover + label {
+  --_clr-current: var(--_clr-hover);
+}
+.my-form input[type="checkbox"]:focus-visible::after,
+.my-form input[type="checkbox"]:hover::after {
+  opacity: 0.5;
+  color: var(--_clr-hover);
+}
+
+.my-form input[type="checkbox"]:checked + label:not(:hover),
+.my-form input[type="checkbox"]:checked:not(:hover) {
+  --_clr-current: var(--_clr-checked);
+}
+.my-form input[type="checkbox"]:checked::after {
+  opacity: 1;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+      <!-- Add your GIF image here -->
+      <img src="giphy.gif" alt="Description of GIF" style="max-width: 100%; height: auto;">
+  </main>
+<form class="my-form">
+  <div>
+    <input id="check-1" type="checkbox" />
+    <label for="check-1">Checkbox 1</label>
+  </div>
+  <div>
+    <input checked="" id="check-2" type="checkbox" />
+    <label for="check-2">Checkbox 2</label>
+  </div>
+  <div>
+    <input id="check-3" type="checkbox" />
+    <label for="check-3">Checkbox 3</label>
+  </div>
+  <div>
+    <input id="check-4" type="checkbox" />
+    <label for="check-4">Checkbox 4</label>
+  </div>
+</form>
+
+</body>
+</html>
